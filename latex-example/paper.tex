@@ -1,11 +1,11 @@
 \documentclass[letterpaper,twocolumn,10pt]{article}
 
-\usepackage[margin=.95in]{geometry}
 \usepackage{times}
 \usepackage{graphicx}
 \usepackage{verbatim}
 \usepackage{fancyhdr}
 \usepackage{color}
+\usepackage{mdwlist} % this is a list shrinking package
 
 %% review command -> for drawing attention to parts that are not ready yet
 %\newcommand{\review}[1] { {\bf\textcolor{red}{{#1}}} }
@@ -15,9 +15,13 @@
 }}}
 \newcommand{\notes}[1]{{\footnotesize\textcolor{green}{[NOTE: #1]}}}
 \newcommand{\notesinvis}[1]{{}}
+\newcommand{\bla}[0]{\review{FIXME} }
+\newcommand{\bc}[0]{\review{\cite{CITEME}} }
+\newcommand{\br}[0]{\review{\ref{REFME}} }
+\newcommand{\system}[0]{TEMPLATE}
 
 \sloppy
-\title{} 
+\title{\system: A Latex Template for All Projects} 
 \author{Nathan Dautenhahn \\ University of Illinois at Urbana Champaign } 
 \date{}
 
@@ -32,5 +36,5 @@
 \input{intro.tex}
 
 \bibliographystyle{abbrv}
-\bibliography{mybib.bib}
+\bibliography{bibtex/mybib.bib}
 \end{document}
