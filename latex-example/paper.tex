@@ -1,0 +1,36 @@
+\documentclass[letterpaper,twocolumn,10pt]{article}
+
+\usepackage[margin=.95in]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+\usepackage{color}
+
+%% review command -> for drawing attention to parts that are not ready yet
+%\newcommand{\review}[1] { {\bf\textcolor{red}{{#1}}} }
+\newcommand{\review}[1]{{\bf\textcolor{red}{[#1]}}}
+\newcommand{\notify}[1]{{\bf\textcolor{blue}{
+  [COMMENT FOR EDITOR -- #1]
+}}}
+\newcommand{\notes}[1]{{\footnotesize\textcolor{green}{[NOTE: #1]}}}
+\newcommand{\notesinvis}[1]{{}}
+
+\sloppy
+\title{} 
+\author{Nathan Dautenhahn \\ University of Illinois at Urbana Champaign } 
+\date{}
+
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\begin{document}
+
+\maketitle
+
+\input{abstract.tex}
+\input{intro.tex}
+
+\bibliographystyle{abbrv}
+\bibliography{mybib.bib}
+\end{document}
