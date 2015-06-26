@@ -1,4 +1,5 @@
 TARGET=paper
+DBTARGET=paper-db
 
 GNUPLOT=gnuplot
 
@@ -22,7 +23,7 @@ CONFFILES += ${wildcard *.sty} ${wildcard *.cls}
 $(TARGET): $(TARGET).pdf 
 
 cpdrop: $(TARGET).pdf
-	cp $(TARGET).pdf ~/Dropbox/research/pdfsmake/thesis-proposal.pdf
+	cp $(TARGET).pdf ~/Dropbox/research/pdfsmake/$(DBTARGET).pdf
 
 
 $(TARGET).pdf: $(TEXFILES) $(FIGFILES) $(BIBFILES) $(CONFFILES) \

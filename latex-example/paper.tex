@@ -1,3 +1,5 @@
+% vim:tw=60:et
+%%----------------------------------------------------------
 \documentclass[letterpaper,twocolumn,10pt]{article}
 
 \usepackage{times}
@@ -6,6 +8,7 @@
 \usepackage{fancyhdr}
 \usepackage{color}
 \usepackage{mdwlist} % this is a list shrinking package
+\usepackage{xspace}
 
 %% review command -> for drawing attention to parts that are not ready yet
 %\newcommand{\review}[1] { {\bf\textcolor{red}{{#1}}} }
@@ -18,7 +21,9 @@
 \newcommand{\bla}[0]{\review{FIXME} }
 \newcommand{\bc}[0]{\review{\cite{CITEME}} }
 \newcommand{\br}[0]{\review{\ref{REFME}} }
-\newcommand{\system}[0]{TEMPLATE}
+
+%%---- System Macros
+\newcommand{\system}[0]{TEMPLATE\xspace}
 
 \sloppy
 \title{\system: A Latex Template for All Projects} 
